@@ -1,0 +1,183 @@
+body {
+    overflow: hidden;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #4415bd;
+    color: #fff;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.header {
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+    margin: 0px 0rem 0px 10rem;
+}
+
+#progress {
+    min-width: 20rem;
+    height: 2rem;
+    border: 0.2rem solid #11ff00;
+    border-radius: 2rem;
+    display: flex;
+    overflow: hidden;
+
+}
+
+
+
+.proprogress_full {
+
+    width: 0%;
+    min-height: 2rem;
+    position: absolute;
+}
+
+.Score {
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.text {
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100lvw;
+    margin-top: 10rem;
+    min-height: 400px;
+}
+
+.correct {
+    background: rgb(60, 223, 11);
+
+}
+
+.incorrect {
+    background: rgb(236, 16, 16);
+}
+
+.settings {
+    width: 50lvw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BtnsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #444;
+    width: 75%;
+    height: 50%;
+    padding: 5px 0px;
+    margin-bottom: 2rem;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    color: #fff;
+    box-sizing: border-box;
+    transition: all 0.4s linear;
+}
+
+.btns .btnsItem {
+    width: 100%;
+    text-align: center;
+}
+
+.btns.correct {
+    background: rgb(60, 223, 11);
+}
+
+.btns.incorrect {
+    background: rgb(236, 16, 16);
+}
+
+.btns:hover {
+    letter-spacing: 0.25em;
+    width: 85%;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+.btns::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+
+}
+
+.btns span {
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+}
+
+.scoreBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    font-size: 48px;
+}
+
+.scoreBox .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.scoreBox .btns {
+    width: 250px;
+}
+
+.scoreBox .btns:hover {
+    letter-spacing: 5px;
+    width: 300px;
+}
+
+.scoreBox .btns span{
+    font-size: 24px;
+}
+
+input.nik {
+    margin-top: 15px;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+}
+
+.btn {
+    background: #27282c;
+    border: 1px solid #444;
+    padding: 15px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}

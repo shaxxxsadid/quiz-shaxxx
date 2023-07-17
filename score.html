@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleScore.css">
+    <title>Score</title>
+</head>
+
+<body>
+    <div class="score">
+        <div class="titleScore">
+        </div>
+        <ul class="listScore">
+            <span>Предыдущие результаты</span>
+        </ul>
+    </div>
+</body>
+<script>
+    const score = document.querySelector('.titleScore')
+    const list = document.querySelector('.listScore')
+    score.innerHTML += `<h3>Ваш счет: ${localStorage.getItem('Score')}</h3>`
+    for (let i = 1; i < localStorage.length; i++)
+        list.innerHTML += `<li>${localStorage.getItem(`Score${i}`)}</li>`
+</script>
+
+</html>

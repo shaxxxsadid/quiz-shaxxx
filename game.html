@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style_game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="gameBox">
+        <header class="header">
+            <div class="column">
+                <h1 id="progressText">Qestion 1 of 4</h1>
+                <div id="progress">
+                    <div class="progress_full" style="background: #11ff00;"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="title">Score</div>
+                <span id="score" class="Score">
+                    100
+                </span>
+            </div>
+        </header>
+        <div class="container">
+            <div class="text">
+                <h2 id="question"> THIS LAND question for quizz</h2>
+            </div>
+            <div class="settings">
+                <div class="BtnsBox">
+                    <div class="btns">
+                        <span class="btnsItem" id="choice" data-number="1"> Button </span><i></i>
+                    </div>
+                    <div class="btns">
+                        <span class="btnsItem" id="choice" data-number="2"> Button </span><i></i>
+                    </div>
+                </div>
+                <div class="BtnsBox">
+                    <div class="btns">
+                        <span class="btnsItem" id="choice" data-number="3"> Button </span><i></i>
+                    </div>
+                    <div class="btns">
+                        <span class="btnsItem" id="choice" data-number="4"> Button </span><i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scoreBox">
+        <div class="headerScore">
+            <h2>Поздравляем !!!</h2>
+        </div>
+        <div class="resultScore">Ваш счет: ???</div>
+        <a class="link" href="score.html">
+            <div class="btns">
+                <span> Score</span>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
